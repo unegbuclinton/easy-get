@@ -34,7 +34,7 @@ const NavBar = () => {
       </span>
 
       <div
-        className={`fixed top-0 left-0 flex flex-col items-center justify-center bg-[#000] w-full h-screen transition ease-in-out delay-150 ${
+        className={`fixed top-0 left-0 flex flex-col items-center justify-center bg-[#fff] w-full h-screen transition ease-in-out delay-150 ${
           toggleMenu ? 'translate-x-0' : 'translate-x-full'
         }`}
       >

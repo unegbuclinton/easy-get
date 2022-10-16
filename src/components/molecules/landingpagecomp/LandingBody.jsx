@@ -9,7 +9,7 @@ const LandingBody = () => {
         <h1 className="text-navy-blue font-bold text-2xl md:4xl lg:text-3xl lg:mt-12 lg:text-left  xl:text-5xl  xl:mt-24">
           Sit and relax while we go errands for your home
         </h1>
-        <p className="text-navy-blue text-2xl lg:text-left mt-12 xl:mt-20 ">
+        <p className="text-navy-blue text-sm md:text-2xl lg:text-left mt-12 xl:mt-20 ">
           Relax and expect your delivery, let EasyGet do the work, with you
           feeling at ease. Fast and trustworthy
         </p>
