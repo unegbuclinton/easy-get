@@ -3,5 +3,5 @@ export const LandingPageNav = [
   { title: 'Place Order', path: '/' },
   { title: 'Proposal', path: '/' },
   { title: 'Contact Us', path: '/' },
-  { title: 'Login', path: '/' },
+  { title: 'Login', path: '/login' },
 ];

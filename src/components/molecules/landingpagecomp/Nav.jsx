@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { DPIconCancel, DPIconLogo, DPIconMenuBars } from '../../../icons';
 import { LandingPageNav } from '../../../utilities/LandingPageNav';
 
 const NavBar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <nav className="flex items-center justify-between">
@@ -22,7 +23,10 @@ const NavBar = () => {
             {title}
           </Link>
         ))}
-        <button className="ml-14 font-semibold bg-navy-blue text-[#fff] py-3 px-6 rounded-lg hover:bg-[#fff] hover:text-[#170073]">
+        <button
+          onClick={() => navigate('/signup')}
+          className="ml-14 font-semibold bg-navy-blue text-[#fff] py-3 px-6 rounded-lg hover:bg-[#fff] hover:text-[#170073]"
+        >
           Sign Up
         </button>
       </ul>
