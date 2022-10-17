@@ -7,11 +7,11 @@ const LoginPage = () => {
   return (
     <div className="px-4 py-6 md:px-20">
       <NavBar />
-      <div className="flex flex-col lg:flex-row gap-2.5">
+      <div className="flex flex-col lg:flex-row lg:gap-32">
         <img
           src={signupImg}
           alt="skating"
-          className="w-full mt-6 object-contain lg:w-2/4"
+          className="w-full h-96 mt-6 object-contain lg:w-5/12 lg:h-full"
         />
         <LoginForm />
       </div>

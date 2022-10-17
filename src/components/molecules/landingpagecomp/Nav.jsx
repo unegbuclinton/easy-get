@@ -17,7 +17,7 @@ const NavBar = () => {
         {LandingPageNav.map(({ title, path }, idx) => (
           <Link
             key={idx}
-            className="lg:ml-10 xl:ml-14 font-semibold text-navy-blue hover:border-b-2 "
+            className="lg:ml-10 xl:ml-14 font-normal text-navy-blue hover:border-b-2 "
             to={path}
           >
             {title}
@@ -25,7 +25,7 @@ const NavBar = () => {
         ))}
         <button
           onClick={() => navigate('/signup')}
-          className="ml-14 font-semibold bg-navy-blue text-[#fff] py-3 px-6 rounded-lg hover:bg-[#fff] hover:text-[#170073]"
+          className="ml-14 font-normal bg-navy-blue text-[#fff] py-3 px-6 rounded-lg hover:bg-[#fff] hover:text-[#170073]"
         >
           Sign Up
         </button>
@@ -45,12 +45,18 @@ const NavBar = () => {
         {LandingPageNav.map(({ title, path }, idx) => (
           <Link
             key={idx}
-            className=" font-semibold text-navy-blue mb-6 md:text-3xl"
+            className=" font-normal text-navy-blue mb-6 md:text-3xl"
             to={path}
           >
             {title}
           </Link>
         ))}
+        <button
+          onClick={() => navigate('/signup')}
+          className="font-semibold bg-navy-blue text-[#fff] py-3 px-6 rounded-lg hover:bg-[#fff] hover:text-[#170073]"
+        >
+          Sign Up
+        </button>
       </div>
     </nav>
   );

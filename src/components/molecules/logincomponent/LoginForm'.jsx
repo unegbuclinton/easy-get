@@ -5,7 +5,7 @@ import { DPIconGoogleIcon } from '../../../icons';
 const LoginForm = () => {
   const navigate = useNavigate();
   return (
-    <div className="flex-1 mt-12">
+    <div className="flex-1 mt-20">
       <h1 className=" text-2xl font-bold lg:text-4xl">Login to your account</h1>
       <form className="flex flex-col">
         <input
