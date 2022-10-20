@@ -17,7 +17,7 @@ const NavBar = () => {
         {LandingPageNav.map(({ title, path }, idx) => (
           <Link
             key={idx}
-            className="lg:ml-10 xl:ml-8 font-normal text-navy-blue hover:border-b-2 "
+            className="lg:ml-10 xl:ml-82 font-normal text-navy-blue hover:border-b-2 "
             to={path}
           >
             {title}

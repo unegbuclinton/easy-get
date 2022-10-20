@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import NavBar from '../components/molecules/landingpagecomp/Nav';
 import SignupForm from '../components/molecules/signupcomponent/SignupForm';
@@ -5,7 +6,12 @@ import signUp from '../icons/img/signup.png';
 
 const SignUpPage = () => {
   return (
-    <div className="px-4 py-6 md:px-20">
+    <motion.div
+      className="px-4 py-6 md:px-20"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <NavBar />
       <div className="flex flex-col lg:flex-row">
         <img
@@ -15,7 +21,7 @@ const SignUpPage = () => {
         />
         <SignupForm />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
